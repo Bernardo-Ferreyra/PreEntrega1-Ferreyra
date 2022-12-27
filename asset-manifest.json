@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PreEntrega1-Ferreyra/static/css/main.c15d0d4d.css",
+    "main.js": "/PreEntrega1-Ferreyra/static/js/main.a31960df.js",
+    "static/js/787.54bab63f.chunk.js": "/PreEntrega1-Ferreyra/static/js/787.54bab63f.chunk.js",
+    "index.html": "/PreEntrega1-Ferreyra/index.html",
+    "main.c15d0d4d.css.map": "/PreEntrega1-Ferreyra/static/css/main.c15d0d4d.css.map",
+    "main.a31960df.js.map": "/PreEntrega1-Ferreyra/static/js/main.a31960df.js.map",
+    "787.54bab63f.chunk.js.map": "/PreEntrega1-Ferreyra/static/js/787.54bab63f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c15d0d4d.css",
+    "static/js/main.a31960df.js"
+  ]
+}

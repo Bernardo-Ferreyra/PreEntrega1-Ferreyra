@@ -8,7 +8,7 @@ function NavBar() {
     <>
     <Navbar bg="dark" variant="dark">
         <Container fluid>
-            <Navbar.Brand href="#">Ecommerce-brand</Navbar.Brand>
+            <Navbar.Brand href="#"><img src="./images/logo.png" alt="logo" width= "10px" height="10px"/></Navbar.Brand>
             <Nav className="mr-auto d-flex justify-content-around align-items-center">
                 <Nav.Link href="#Categoria1">Categoria1</Nav.Link>
                 <Nav.Link href="#Categoria2">Categoria2</Nav.Link>

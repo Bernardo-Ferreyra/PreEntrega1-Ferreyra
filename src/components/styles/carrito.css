@@ -1,7 +1,8 @@
-.bienvenida{
-    background-color: #292b2c;
-    height: 50vh;
+.carritohome{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 5rem;
+    margin-top: 5rem;
+
 }

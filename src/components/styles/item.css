@@ -1,0 +1,49 @@
+.itemcard{
+    width: 16rem;
+    height: 26rem;
+    margin: 1rem;
+}
+.imgcard{
+    width: 100%;
+    height: 50%;
+    object-fit:contain;
+}
+
+.textcard{
+    width: 100%;
+    height: 40%;
+    background-color:#292b2c ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.btncompra{
+    width: 100%;
+    border-radius: 0;
+}
+
+.textdesc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vermasbtn{
+    align-self: flex-end;
+    text-decoration: none;
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+.vermasbtn:hover{
+    color: #FFC100;
+    text-decoration: underline;
+}
+
+.descp{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+}

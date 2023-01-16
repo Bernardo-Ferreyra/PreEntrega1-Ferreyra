@@ -1,7 +1,10 @@
-.bienvenida{
-    background-color: #292b2c;
-    height: 50vh;
+.logonav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logoimg{
+    width: 2.5rem;
+    height: 3rem;
 }

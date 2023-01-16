@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter> 
+    <BrowserRouter basename='/PreEntrega1-Ferreyra'> 
     <NavBar/>
       <Routes>
         <Route path='/' element= {<ItemListContainer title ='Bienvenido a my-ecommerce'/>} />

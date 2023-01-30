@@ -1,0 +1,17 @@
+.cartItem {
+    --bs-gutter-x: 1.5rem;
+}
+
+.cartItemQuantity{
+    background: #f4f4f4;
+}
+
+.items {
+    padding-right: 30px;
+}
+
+.cartItemPrice {
+    font-size: 1.3em;
+    text-align: center;
+}
+

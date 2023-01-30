@@ -1,0 +1,21 @@
+
+.countContainer{
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #E4A11B ;
+    border-radius: .4rem;
+}
+
+.btncount i{
+    font-size: 1.2rem;
+}
+
+.btncount:hover{
+    color: #E4A11B;
+}
+
+.btntext{
+    font-size: 1.2em;
+}

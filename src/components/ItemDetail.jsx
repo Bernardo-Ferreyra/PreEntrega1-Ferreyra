@@ -1,8 +1,13 @@
 import React from 'react'
 import "./styles/itemDetail.css"
 import Button from 'react-bootstrap/Button';
+import ItemCount from './ItemCount';
+import { useState, useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 const ItemDetail = ({item}) => {
+    const[contador, setContador] = useState(1);
+    const {addToCart} =useContext (CartContext);
   return (
 
 <div className="container-fluid">
@@ -18,7 +23,8 @@ const ItemDetail = ({item}) => {
                     <h4 className="box-title mt-5">Descripcion</h4>
                     <p>{item.descripcion}</p>
                     <h2 className="mt-5">${item.precio}</h2>
-                    <Button variant="warning"><i className="bi bi-cart3 mr-2"> Agregar al carrito</i></Button>
+                    <ItemCount contador={contador} valorActualizado={setContador} />
+                    <Button onClick={() => addToCart(item, contador)} variant="warning"><i className="bi bi-cart3 mr-2"> Agregar al carrito</i></Button>
                     <h3 className="box-title mt-5">Info</h3>
                     <ul className="list-unstyled">
                         <li><i className="bi bi-check"></i>{item.marca}</li>
@@ -38,18 +44,3 @@ const ItemDetail = ({item}) => {
 
 export default ItemDetail
 
-
-/*     <div className='containerDetail'>
-    <img src={item.img} alt="unafoto" />
-
-    <article>
-      <h2>{item.titulo}</h2>
-      <section>
-        <h3>${item.precio}</h3>
-      </section>
-
-      <section>
-        <p>{item.descripcion}</p>
-      </section>
-    </article>
-  </div> */

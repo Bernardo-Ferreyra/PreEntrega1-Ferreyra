@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PreEntrega1-Ferreyra/static/css/main.3bdf298d.css",
-    "main.js": "/PreEntrega1-Ferreyra/static/js/main.340b64c4.js",
+    "main.css": "/PreEntrega1-Ferreyra/static/css/main.62fa7c2b.css",
+    "main.js": "/PreEntrega1-Ferreyra/static/js/main.406038bf.js",
     "static/js/787.54bab63f.chunk.js": "/PreEntrega1-Ferreyra/static/js/787.54bab63f.chunk.js",
     "index.html": "/PreEntrega1-Ferreyra/index.html",
-    "main.3bdf298d.css.map": "/PreEntrega1-Ferreyra/static/css/main.3bdf298d.css.map",
-    "main.340b64c4.js.map": "/PreEntrega1-Ferreyra/static/js/main.340b64c4.js.map",
+    "main.62fa7c2b.css.map": "/PreEntrega1-Ferreyra/static/css/main.62fa7c2b.css.map",
+    "main.406038bf.js.map": "/PreEntrega1-Ferreyra/static/js/main.406038bf.js.map",
     "787.54bab63f.chunk.js.map": "/PreEntrega1-Ferreyra/static/js/787.54bab63f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bdf298d.css",
-    "static/js/main.340b64c4.js"
+    "static/css/main.62fa7c2b.css",
+    "static/js/main.406038bf.js"
   ]
 }

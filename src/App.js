@@ -6,14 +6,14 @@ import Carrito from './components/Carrito';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './context/CartProvider';
 
-
 function App() {
+
   return (
     <BrowserRouter basename='/PreEntrega1-Ferreyra'> 
     <CartProvider>
     <NavBar/>
       <Routes>
-        <Route path='/' element= {<ItemListContainer title ='Bienvenido a my-ecommerce'/>} />
+        <Route path='/' element= {<ItemListContainer />} />
         <Route path='/item/:id' element= {<ItemDetailContainer />} />
         <Route path='/categoria/:nombreCategoria' element= {<ItemListContainer />} />
         <Route path='/carrito' element={<Carrito/>} />

@@ -1,3 +1,17 @@
+.emptyCart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.emptyCart--img{
+  width: 15rem;
+  height: 15rem;
+}
+
 .cart {
   max-width: 960px;
   padding-top: 5rem;
@@ -71,3 +85,13 @@ button:hover, .btn:hover {
   right: -6px;
 }
 
+.btncarrito{
+  text-decoration: none;
+  background-color: #000;
+  color: white;
+  border-radius: 0;
+  border: none;
+}
+.btncarrito:hover{
+  color: black;
+}

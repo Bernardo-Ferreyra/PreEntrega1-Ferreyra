@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { CartContext } from "./CartContext";
+import Swal from 'sweetalert2'
 
 
 const CartProvider = ({children}) => {
 
-  const [cart, setCart] = useState ([]);
+  const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || []) 
 
+  const [cart, setCart] = useState (cartFromLocalStorage);
+
+  useEffect(() => {
+    localStorage.setItem('cart',JSON.stringify(cart))
+  }, [cart])
+
+  
   const clearCart = () => {
     setCart([]);
   };
@@ -20,6 +28,16 @@ const CartProvider = ({children}) => {
 
 
   const addToCart = (item, quantity)=>{
+    Swal.fire({
+      toast: true,
+      icon: 'success',
+      title: 'Agregado al carrito',
+      position: 'bottom-right',
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+    })
+
     let newCart;
     let product = cart.find(prod => prod.id === item.id)
     if(product){
@@ -33,13 +51,37 @@ const CartProvider = ({children}) => {
 
   };
 
+  const plusQuantity= (product) =>{
+    let newCart;
+    let newProduct = cart.find(prod => prod.id === product.id)
+    if(newProduct){
+      newProduct.quantity += 1;
+      newCart = [...cart];
+    }
+    setCart(newCart)
+    console.log(cart)
+  }
+
+  const removeQuantity= (product) =>{
+    let newCart;
+    let newProduct = cart.find(prod => prod.id === product.id)
+    if(newProduct.quantity === 1){
+      return
+    }else{
+      newProduct.quantity -= 1;
+      newCart = [...cart];
+    }
+    setCart(newCart)
+    console.log(cart)
+  }
+
   const totalPrice = () => {
     return cart.reduce((acumulador, actualizado) => acumulador + actualizado.quantity * actualizado.precio, 0);
   }
 
   return (
 
-    <CartContext.Provider value={{cart, addToCart, clearCart, deleteFromCart, isInCart, totalPrice}}>
+    <CartContext.Provider value={{cart, addToCart, clearCart, deleteFromCart, isInCart, totalPrice, plusQuantity, removeQuantity}}>
         {children}
     </CartContext.Provider>
   )

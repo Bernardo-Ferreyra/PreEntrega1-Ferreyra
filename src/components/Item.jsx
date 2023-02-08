@@ -14,12 +14,9 @@ const Item = ({producto}) => {
             <p>{producto.tipo} {producto.marca} {producto.caracteristica}</p>
             <h5 className='cardPrecio mt-2 mb-0'>${producto.precio}</h5>
           </div>
-          <Link to={`/item/${producto.id}`} className="vermasbtn">
-            <p className="mb-0">Ver mas</p>
-          </Link>
         </div>
-        <Link to={`/carrito`}>
-        <Button variant="warning" className="btncompra">Agregar al carrito</Button>
+        <Link to={`/item/${producto.id}`}>
+        <Button variant="warning" className="btncompra">Ver mas</Button>
         </Link>
       </Card.Body>
     </Card>

@@ -1,0 +1,12 @@
+.bannercontenedor{
+    background-color: #292b2c;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner--img{
+    width: 10rem;
+    height: 13rem;
+}

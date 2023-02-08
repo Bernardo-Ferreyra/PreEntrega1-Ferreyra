@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PreEntrega1-Ferreyra/static/css/main.62fa7c2b.css",
-    "main.js": "/PreEntrega1-Ferreyra/static/js/main.406038bf.js",
+    "main.css": "/PreEntrega1-Ferreyra/static/css/main.349c9931.css",
+    "main.js": "/PreEntrega1-Ferreyra/static/js/main.5412e435.js",
     "static/js/787.54bab63f.chunk.js": "/PreEntrega1-Ferreyra/static/js/787.54bab63f.chunk.js",
     "index.html": "/PreEntrega1-Ferreyra/index.html",
-    "main.62fa7c2b.css.map": "/PreEntrega1-Ferreyra/static/css/main.62fa7c2b.css.map",
-    "main.406038bf.js.map": "/PreEntrega1-Ferreyra/static/js/main.406038bf.js.map",
+    "main.349c9931.css.map": "/PreEntrega1-Ferreyra/static/css/main.349c9931.css.map",
+    "main.5412e435.js.map": "/PreEntrega1-Ferreyra/static/js/main.5412e435.js.map",
     "787.54bab63f.chunk.js.map": "/PreEntrega1-Ferreyra/static/js/787.54bab63f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62fa7c2b.css",
-    "static/js/main.406038bf.js"
+    "static/css/main.349c9931.css",
+    "static/js/main.5412e435.js"
   ]
 }

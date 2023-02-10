@@ -17,7 +17,7 @@ function App() {
   }, [cart])
  */
   return (
-    <BrowserRouter basename='/PreEntrega1-Ferreyra'> 
+    <BrowserRouter> 
     <CartProvider>
     <NavBar/>
       <Routes>

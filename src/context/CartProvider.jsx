@@ -6,9 +6,6 @@ const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || "[]");
 
 const CartProvider = ({children}) => {
 
-
-
-
   const [cart, setCart] = useState(cartFromLocalStorage);
 
   useEffect(() => {

@@ -2,11 +2,12 @@ import { useState,useEffect } from "react";
 import { CartContext } from "./CartContext";
 import Swal from 'sweetalert2'
 
+const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || "[]");
 
 const CartProvider = ({children}) => {
 
 
-  const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || "[]");
+
 
   const [cart, setCart] = useState(cartFromLocalStorage);
 

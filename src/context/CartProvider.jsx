@@ -6,9 +6,9 @@ import Swal from 'sweetalert2'
 const CartProvider = ({children}) => {
 
 
-  const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || []);
+  const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || "[]");
 
-  const [cart, setCart] = useState (cartFromLocalStorage);
+  const [cart, setCart] = useState(cartFromLocalStorage);
 
   useEffect(() => {
     localStorage.setItem('cart',JSON.stringify(cart))

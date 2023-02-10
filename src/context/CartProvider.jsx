@@ -5,7 +5,15 @@ import Swal from 'sweetalert2'
 
 const CartProvider = ({children}) => {
 
-  const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || []) 
+  const cartFromLocalStorage = () => {
+    try {
+        return JSON.parse(localStorage.getItem('cart') || []);
+    } catch (error) {
+        return null;
+    }
+};
+
+  /* const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || []); */
 
   const [cart, setCart] = useState (cartFromLocalStorage);
 

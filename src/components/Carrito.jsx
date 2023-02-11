@@ -8,6 +8,8 @@ import ModalCheckout from './ModalCheckout'
 import { useState } from 'react'
 
 const Carrito = () => {
+  
+  window.scroll(0,0);
 
   const [show, setShow] = useState(false);
 

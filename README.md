@@ -51,3 +51,6 @@ Se utiliza UseContext para el manejo del carrito en el cual se realizan las oper
 Tambien se guarda y obtiene el carrito atravez de LocalStorage
 
 
+enlace de video
+
+[![Watch the video](https://res.cloudinary.com/dmzrvnlgb/image/upload/v1676145078/coderproyecto_zh7owc.png)](https://youtu.be/nIVWGGgAmn0)

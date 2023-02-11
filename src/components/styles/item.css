@@ -26,8 +26,16 @@
 
 .textdesc{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+}
+
+.text{
+    height: 75%;
+    overflow: hidden;
+    
 }
 
 .vermasbtn{
@@ -40,10 +48,4 @@
 .vermasbtn:hover{
     color: #FFC100;
     text-decoration: underline;
-}
-
-.descp{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-wrap: break-word;
 }

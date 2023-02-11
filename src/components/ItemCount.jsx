@@ -13,9 +13,9 @@ const ItemCount = ({contador,valorActualizado}) => {
     };
   return (
     <div className="countContainer mb-4">
-       <Button onClick={sumar} variant="dark p-0 btncount"><i className="bi bi-plus-circle px-2"></i></Button>
-       <span className="btntext px-2">{contador}</span>
        <Button onClick={restar} variant="dark p-0 btncount"><i className="bi bi-dash-circle px-2"></i></Button>
+       <span className="btntext px-2">{contador}</span>
+       <Button onClick={sumar} variant="dark p-0 btncount"><i className="bi bi-plus-circle px-2"></i></Button>
     </div>
   )
 }

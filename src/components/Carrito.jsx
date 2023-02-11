@@ -15,6 +15,7 @@ const Carrito = () => {
   const handleShow = () => setShow(true);
 
   const {cart, totalPrice, clearCart} = useContext(CartContext);
+
   if(cart.length === 0){
     return(
       <div className='emptyCart'>
@@ -36,23 +37,22 @@ const Carrito = () => {
           <h1 className='m-5'>Tu Carrito</h1> 
         </div>
         <div className='w-100 d-grid gap-2 d-flex justify-content-start mb-4 px-2'>
-              <Link to="/" >
-                <Button variant='link' className='btncarrito'><i className="bi bi-reply-fill"></i>volver</Button>
-              </Link>
-              <Button variant='link' className='btncarrito' onClick={() => clearCart()}><i className="bi bi-cart-x"></i> Vaciar</Button>        
+          <Link to="/" >
+            <Button variant='link' className='btncarrito'><i className="bi bi-reply-fill"></i>volver</Button>
+          </Link>
+          <Button variant='link' className='btncarrito' onClick={() => clearCart()}><i className="bi bi-cart-x"></i> Vaciar</Button>        
         </div>
 
         <div className='container-fluid'>
 
-          <div className="row align-items-start">
+          <div className="row align-items-start pb-5">
 
             <div className="col-12 col-sm-8 items"> 
               {cart.map( product => <ItemCart key={product.id} product={product} />)}
             </div>
-
           
             <div className="col-12 col-sm-4 p-3 proceed form">
-              
+
               <div className="row m-0">
                 <div className="col-sm-8 p-0">
                   <h6>Subtotal</h6>
@@ -64,7 +64,7 @@ const Carrito = () => {
 
               <div className="row m-0">
                 <div className="col-sm-8 p-0 ">
-                  <h6>IVA %</h6>
+                  <h6>IVA 21%</h6>
                 </div>
                 <div className="col-sm-4 p-0">
                   <p className="tax">${Math.round(totalPrice() * 0.21)}</p>
@@ -81,7 +81,9 @@ const Carrito = () => {
                 </div>
               </div>
               <button className="btn-checkout shopnow" onClick={handleShow}><span>Checkout</span></button>
+
             </div>
+
           </div>
 
         </div>
@@ -93,15 +95,3 @@ const Carrito = () => {
 }
 
 export default Carrito
-
-
-/*     <div className='carritohome'>
-      <Link to='/'>Volver a Comprar</Link>
-
-      {
-        cart.map( product => <ItemCart key={product.id} product={product} />)
-      }
-      <p>
-        total : ${totalPrice()}
-      </p>
-    </div> */

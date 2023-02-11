@@ -33,11 +33,13 @@ function ItemListContainer() {
 
 
   return (
+
     <div>
       <HomeCarousel />
       <BannerConditional categoria={parametro.nombreCategoria} />
       <ItemList items={items} />
     </div>
+    
   )
 }
   

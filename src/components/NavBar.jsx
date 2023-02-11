@@ -16,6 +16,7 @@ function NavBar() {
           <img src="https://res.cloudinary.com/dmzrvnlgb/image/upload/v1673792529/freepik--Headphones--inject-41_lrzbkl.png" alt="logo" className='logoimg' />
           <h5 className='mb-0 mt-1 logotxt'> Berni<br /> <span className='text-warning'>S</span>tore</h5>
         </Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
           <Nav className="d-flex justify-content-center align-items-center">

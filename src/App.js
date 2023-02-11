@@ -11,6 +11,7 @@ import CartProvider from './context/CartProvider';
 function App() {
 
   return (
+    
     <BrowserRouter> 
     <CartProvider>
     <NavBar/>

@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 
 
 const CartProvider = ({children}) => {
+
   const cartFromLocalStorage= JSON.parse(localStorage.getItem('cart') || "[]");
 
   const [cart, setCart] = useState(cartFromLocalStorage);
@@ -14,6 +15,7 @@ const CartProvider = ({children}) => {
   }, [cart])
 
   
+
   const clearCart = () => {
     setCart([]);
   };
@@ -79,11 +81,13 @@ const CartProvider = ({children}) => {
     return cart.reduce((acumulador, actualizado) => acumulador + actualizado.quantity * actualizado.precio, 0);
   }
 
+
   return (
 
     <CartContext.Provider value={{cart, addToCart, clearCart, deleteFromCart, isInCart, totalPrice, plusQuantity, removeQuantity}}>
         {children}
     </CartContext.Provider>
+    
   )
 }
 

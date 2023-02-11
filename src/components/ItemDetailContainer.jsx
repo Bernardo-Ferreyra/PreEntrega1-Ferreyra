@@ -11,6 +11,7 @@ const ItemDetailContainer = () => {
   const parametro = useParams();
 
   useEffect(() => {
+    window.scroll(0,0);
     const querydb = getFirestore();
     const queryDoc = doc(querydb, 'productos', parametro.id )
     getDoc(queryDoc)

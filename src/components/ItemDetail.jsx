@@ -41,6 +41,7 @@ const ItemDetail = ({item}) => {
         </div>
 
     )
+    
 }
 
 export default ItemDetail

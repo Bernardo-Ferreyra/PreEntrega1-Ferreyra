@@ -4,7 +4,9 @@ import Card from 'react-bootstrap/Card';
 import './styles/item.css'
 
 const Item = ({producto}) => {
+
   return (
+
     <Card className="itemcard p-0">
       <Card.Img variant="top" src={producto.img} className="imgcard" />
       <Card.Body className="textcard text-white p-0">
@@ -14,10 +16,11 @@ const Item = ({producto}) => {
             <h5 className='align-self-end mt-2 mb-0'>${producto.precio}</h5>
           </div>
         <Link to={`/item/${producto.id}`}>
-        <Button variant="warning" className="btncompra">Ver mas</Button>
+          <Button variant="warning" className="btncompra">Ver mas</Button>
         </Link>
       </Card.Body>
     </Card>
+
   )
 }
 

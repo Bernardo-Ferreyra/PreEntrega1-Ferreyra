@@ -4,13 +4,15 @@ import './styles/homecarousel.css'
 import { Link } from 'react-router-dom';
 
 const HomeCarousel = () => {
-    const [index, setIndex] = useState(0);
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
+
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} className="carouselhome">
+
       <Carousel.Item className='carouselhome'>
         <Link to={'/categoria/Guitarras'}>
           <img
@@ -52,6 +54,7 @@ const HomeCarousel = () => {
           </Carousel.Caption>
         </Link>
       </Carousel.Item>
+      
     </Carousel>
   )
 }

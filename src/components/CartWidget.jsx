@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../context/CartContext';
+import { Badge } from 'react-bootstrap';
 
 function CartWidget() {
   const {cart} = useContext(CartContext);
@@ -17,8 +18,9 @@ function CartWidget() {
   } , [cart])
 
     return (
+      
     <Button variant="warning">
-      <i className="bi bi-cart3">{total} </i>
+      <i className="bi bi-cart3"> <Badge bg="danger">{total}</Badge></i>
     </Button>
       
     )

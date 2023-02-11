@@ -50,7 +50,7 @@ Una vez finalizada la compra se dispara un mensaje con el id de la orden creada 
 Se utiliza UseContext para el manejo del carrito en el cual se realizan las operaciones atravez de funciones
 Tambien se guarda y obtiene el carrito atravez de LocalStorage
 
-Deploy
+### Deploy
 https://my-ecommerce-ferreyra-3gn2x1qe5-bernardo-ferreyra.vercel.app
 
 
